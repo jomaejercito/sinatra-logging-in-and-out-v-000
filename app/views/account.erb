@@ -7,8 +7,11 @@
   </head>
   <body id="page-top">
 
-    <form action='/logout' method="GET">
-      <input type="submit" value="Log Out">
+  <h1>Welcome <%=@user.username%></h1>
+  <h3>Your Balance: <%=@user.balance%></h3>
+
+    <form class="logout" action="/logout" method="get">
+      <input type="submit" name="submit" value="Log Out">
     </form>
 
   </body>
